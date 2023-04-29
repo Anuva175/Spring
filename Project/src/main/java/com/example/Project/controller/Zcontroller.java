@@ -48,6 +48,24 @@ public class Zcontroller {
 		return ser.updatedetails(zo);
 	}
 	
+	@GetMapping("/anu/{name}")
+	public List<Zooinfo> sortDetails(@PathVariable("name") String name)
+	{
+		return ser.sortDetails(name);
+	}
 	
+	@GetMapping("/anu/{pnu}/{psize}")
+	public List<Zooinfo> page(@PathVariable("pnu")int num,@PathVariable("psize")int size)
+	{
+		return ser.page(num,size);
+	}
+	
+	@GetMapping("/anu/{pnu}/{psize}/{name}")
+	public List<Zooinfo> sortpage(@PathVariable("pnu")int num,@PathVariable("psize")int size,@PathVariable("name") String name)
+	{
+		return ser.sortpage(num,size,name);
+	}
+	
+
 	
 }
