@@ -47,12 +47,12 @@ public class Zcontroller {
 	{
 		return ser.updatedetails(zo);
 	}
-	
 	@GetMapping("/anu/{name}")
 	public List<Zooinfo> sortDetails(@PathVariable("name") String name)
 	{
 		return ser.sortDetails(name);
 	}
+	
 	
 	@GetMapping("/anu/{pnu}/{psize}")
 	public List<Zooinfo> page(@PathVariable("pnu")int num,@PathVariable("psize")int size)

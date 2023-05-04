@@ -14,6 +14,13 @@ public class Loginmodel {
 	private int id;
 	private String name;
 	private String pwd;
+	private String dob;
+	private String rollno;
+	private String age;
+	private String gender;
+	private String email;
+	private String phno;
+	private String country;
 	public int getId() {
 		return id;
 	}
@@ -32,6 +39,50 @@ public class Loginmodel {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	public String getRollno() {
+		return rollno;
+	}
+	public void setRollno(String rollno) {
+		this.rollno = rollno;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhno() {
+		return phno;
+	}
+	public void setPhno(String phno) {
+		this.phno = phno;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	
+	
 	
 
 }
